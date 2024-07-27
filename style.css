@@ -1,0 +1,192 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+}
+
+#container {
+    background-color: hsl(210, 60%, 94%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0.8, 0.1);
+    overflow: hidden;
+    width: 827px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow-y: auto;
+}
+#list-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/* .blankDiv {
+    background-color:#b3d9ff;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#addNoteDiv {
+  background-color: hsl(210, 89%, 83%); 
+    border: 1px solid hsl(210, 89%, 83%); /* Light blue border */
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+#addNoteDiv:hover {
+    transition: 0.25s;
+    background-color: #c6e2fd;/* Darker blue on hover */
+}
+
+#addNoteDiv i {
+    font-size: 70px;
+    color: #f0f8ff; /* Very light blue */
+}
+
+#list-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+li {
+    background-color: #b3d9ff; /* Soft blue */
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+#noteBtns-container {
+    display: flex;
+    gap: 5px;
+}
+
+#editBtn, #deleteBtn {
+    background-color: #3366cc; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+}
+
+#editBtn {
+    background-color: #5a8dff; /* Blue */
+}
+
+#deleteBtn:hover {
+    background-color: #d03737; /* Red for delete */
+}
+
+#editBtn:hover {
+    background-color: hwb(220 26% 6%); /* Darker blue */
+}
+
+#popupContainer,
+#editing-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #3399ff; /* Blue border */
+}
+
+#btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #3399ff; /* Blue */
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#closeBtn:hover {
+    background-color: #a7d1fc;
+}
+
+
+#submitBtn:hover {
+    background-color: #a7d1fc; 
+}
